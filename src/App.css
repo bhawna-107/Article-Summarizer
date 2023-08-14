@@ -1,0 +1,57 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+.app{
+    @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+
+}
+
+.head-text{
+    @apply mt-7 text-5xl  font-extrabold leading-[1.5] text-black text-center sm:text-6xl;
+}
+
+.desc{
+    @apply mt-5 text-lg text-gray-600 sm:text-xl text-center max-w-2xl;
+}
+.black-btn{
+    @apply rounded-full bg-black border border-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black;
+}
+
+
+.url_input {
+    @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 pl-10 pr-12 text-sm shadow-lg  font-medium focus:border-black focus:outline-none focus:ring-0;
+  }
+  
+  .submit_btn {
+    @apply hover:border-gray-700 hover:text-gray-700 absolute inset-y-0 right-0 my-1.5 mr-2.5 flex w-10 items-center justify-center rounded border border-gray-200 font-sans text-xs font-medium text-gray-400;
+  }
+/* 
+.url_input{
+    @apply block rounded-md border border-gray-200 w-full bg-white py-2.5 pl-10 text-sm  shadow-lg font-medium focus:outline-none focus:border-black
+}
+
+.submit_btn{
+    @apply absolute my-2  pl-2 ml-20  flex w-10 items-center justify-center rounded border border-gray-200 text-sm hover:border-gray-700 hover:text-gray-700 
+} */
+
+.link_card {
+    @apply p-3 flex justify-start items-center flex-row bg-white border border-gray-200 gap-3 rounded-lg cursor-pointer;
+  }
+  
+  .copy_btn {
+    @apply w-7 h-7 rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
+  }
+  
+  .blue_gradient {
+    @apply font-black bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+  }
+  
+  .summary_box {
+    @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-4;
+  }
+
+  .orange-gradient {
+    @apply bg-gradient-to-r from-orange-500 via-orange-400 to-amber-300 bg-clip-text text-transparent;
+  }
